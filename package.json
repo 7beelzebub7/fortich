@@ -1,5 +1,6 @@
 {
   "name": "fortich",
+  "homepage": "https://7beelzebub7.github.io/fortich/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.6",
@@ -17,6 +20,7 @@
     "drei": "^2.2.21",
     "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.24",
+    "gh-pages": "^6.3.0",
     "gsap": "^3.13.0",
     "lucide-react": "^0.548.0",
     "maath": "^0.10.8",
