@@ -48,7 +48,7 @@ const Navbar = () => {
             <AudioVisualizer />
           </div>
           <img
-            src="/fortichLogo2.svg"
+            src="./fortichLogo2.svg"
             alt="Logo"
             className="mt-2 w-20 h-20 relative z-10"
           />
