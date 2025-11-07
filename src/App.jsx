@@ -19,7 +19,7 @@ export default function App() {
     <Route path="/contacto" element={<Contacto />} />
   </Routes>
 </main>
-<audio id="bg-music" src="/audio/masterDice.mp3" loop controls></audio>
+<audio id="bg-music" src="/audio/vitamina.mp3" loop controls></audio>
 
     </>
   );

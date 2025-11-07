@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="ojoCerrado" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2500 2500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #600f74;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_5);
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #ffa300;
+      }
+    </style>
+    <radialGradient id="Degradado_sin_nombre_5" data-name="Degradado sin nombre 5" cx="-2253.7" cy="464.31" fx="-2253.7" fy="464.31" r="51.9" gradientTransform="translate(-631.38 -4.92) rotate(177.09) scale(.81 -.88)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3ebf00"/>
+      <stop offset=".43" stop-color="#d8f2cc"/>
+      <stop offset=".68" stop-color="#fff4bd"/>
+      <stop offset="1" stop-color="#97dc75"/>
+    </radialGradient>
+  </defs>
+  <path class="cls-2" d="M1260.5,315.41c-20.7-48.19-88.24-46.32-105.76,2.98,25.63,29.55,85,24.84,105.76-2.98Z"/>
+  <path d="M1171.62,306.14c-1.18,48.04,67.69,46.65,67.6-.29,1.18-48.04-67.69-46.65-67.6.29Z"/>
+  <path class="cls-3" d="M1211.08,288.78c-4.08,9.4-8.16,18.81-12.24,28.21,3.35-.06,6.69-.12,10.04-.18.13,4.33.25,8.66.38,12.99,1.02-.13,2.04-.27,3.06-.4-.42-13.54-.83-27.08-1.25-40.62Z"/>
+  <path class="cls-1" d="M1262.54,315.77c-12.99-35.02-61.87-86.71-97.25-27.89,1.65-1.72,4.98-3.8,7.03-4.47-9.51,7.84-18.95,27.63-19.68,35.63,3.19,3.36,22.9,23.43,54.4,23.04,32.99-.41,52.66-22.94,55.5-26.31Z"/>
+</svg>

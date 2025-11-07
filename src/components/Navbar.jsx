@@ -26,16 +26,16 @@ const Navbar = () => {
         </button>
 
         {/* 🔹 Botones izquierda (solo escritorio) */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 ml-50">
           {navItems.slice(0, 2).map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={`text-lg font-semibold transition-colors duration-300 ${
                 location.pathname === item.path
-                  ? "text-cyan-400"
+                  ? "text-[#FCC10A]"
                   : "text-white"
-              } hover:text-cyan-300`}
+              } hover:text-[#FCC10A]`}
             >
               {item.name}
             </Link>
@@ -48,23 +48,23 @@ const Navbar = () => {
             <AudioVisualizer />
           </div>
           <img
-            src="/fortichLogo.svg"
+            src="/fortichLogo2.svg"
             alt="Logo"
-            className="w-15 h-15 relative z-10"
+            className="mt-2 w-20 h-20 relative z-10"
           />
         </div>
 
         {/* 🔹 Botones derecha (solo escritorio) */}
-        <div className="hidden md:flex gap-8">
+        <div className="hidden md:flex gap-8 mr-50">
           {navItems.slice(2).map((item) => (
             <Link
               key={item.path}
               to={item.path}
               className={`text-lg font-semibold transition-colors duration-300 ${
                 location.pathname === item.path
-                  ? "text-cyan-400"
+                  ? "text-[#FCC10A]"
                   : "text-white"
-              } hover:text-cyan-300`}
+              } hover:text-[#FCC10A]`}
             >
               {item.name}
             </Link>
@@ -82,9 +82,9 @@ const Navbar = () => {
               onClick={() => setMenuOpen(false)}
               className={`text-lg font-semibold transition-colors duration-300 ${
                 location.pathname === item.path
-                  ? "text-cyan-400"
+                  ? "text-[#FCC10A]"
                   : "text-white"
-              } hover:text-cyan-300`}
+              } hover:text-[#FCC10A]`}
             >
               {item.name}
             </Link>

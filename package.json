@@ -15,6 +15,7 @@
     "@tailwindcss/vite": "^4.1.16",
     "classnames": "^2.5.1",
     "drei": "^2.2.21",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^12.23.24",
     "gsap": "^3.13.0",
     "lucide-react": "^0.548.0",
