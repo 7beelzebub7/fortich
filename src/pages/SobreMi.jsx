@@ -2,41 +2,34 @@ import React from "react";
 
 export default function SobreMi() {
   return (
-    <>  
-      <div className="relative ml-6 flex gap-[20px] flex-col">
-        {/* Cajas del fondo */}
-        <div className="absolute inset-0 z-0 flex gap-[20px] flex-col">
-          <div className="w-[40%] h-40 bg-[#470147] rounded-4xl"></div>
-          <div className="w-[80%] h-40 bg-[#FCC10A] rounded-4xl"></div>
-          <div className="w-[60%] h-40 bg-[#470147] rounded-4xl"></div>
-          <div className="w-[50%] h-40 bg-[#470147] rounded-4xl"></div>
-          <div className="w-[70%] h-40 bg-[#FCC10A] rounded-4xl"></div>
-          <div className="w-[40%] h-40 bg-[#470147] rounded-4xl"></div>
-        </div>
-        
-        {/* Cajas de línea encima */}
-        <div className="relative z-10 flex gap-[20px] flex-col">
-          <div className="w-[40%] h-40 border-4 border-[#470147] rounded-4xl"></div>
-          <div className="w-[80%] h-40 border-4 border-[#FCC10A] rounded-4xl"></div>
-          <div className="w-[60%] h-40 border-4 border-[#470147] rounded-4xl"></div>
-          <div className="w-[50%] h-40 border-4 border-[#470147] rounded-4xl"></div>
-          <div className="w-[70%] h-40 border-4 border-[#FCC10A] rounded-4xl"></div>
-          <div className="w-[40%] h-40 border-4 border-[#470147] rounded-4xl"></div>
-        </div>
-        <div className=" absolute z-[999] text-white">
-            <h1 className="pt-3 font-bold text-4xl ">¿QUIÉN ES FORTICH?</h1>
-            <p className="pt-10">fortich es un artista emergente, una promesa de la música urbana</p>
-        </div>
-        {/* Imagen centrada */}
-        <div className="absolute inset-0 z-5 flex items-center justify-center">
-          <img 
-            src="images/sm01.png" 
-            alt="Sobre mí" 
-            className="max-w-[50%] h-auto object-contain"
-          />
-        </div>
+    <div className="relative flex justify-center items-center h-screen bg-transparent">
+      {/* Imagen derecha */}
+      <div className="absolute top-20 right-[3%] w-[550px] h-[750px] rounded-2xl overflow-hidden shadow-lg z-0">
+        <img
+          className="w-full h-full object-cover opacity-90 transition duration-500 hover:opacity-100"
+          src="./images/sm02.jpg"
+          alt="Sobre mí derecha"
+        />
       </div>
-    </>
+
+      {/* Imagen izquierda */}
+      <div className="absolute top-109 left-[3%] w-[550px] h-[750px] rounded-2xl overflow-hidden shadow-lg z-0">
+        <img
+          className="w-full h-full object-cover opacity-90 transition duration-500 hover:opacity-100"
+          src="./images/sm03.jpg"
+          alt="Sobre mí izquierda"
+        />
+      </div>
+
+      {/* Texto central superpuesto */}
+      <div className="relative z-10 text-center max-w-xl px-6 pt-150">
+        <p className="text-white text-2xl font-medium leading-relaxed drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] backdrop-blur-sm bg-[rgba(0,0,0,0.25)] rounded-2xl p-6">
+          Soy un creador audiovisual apasionado por el poder de la imagen y el
+          sonido. Cada proyecto que realizo busca transmitir intensidad,
+          emoción y autenticidad. Desde el lente hasta la edición, busco siempre
+          capturar algo más que solo una escena: busco capturar una sensación.
+        </p>
+      </div>
+    </div>
   );
 }
-

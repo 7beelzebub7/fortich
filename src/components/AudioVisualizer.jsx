@@ -10,12 +10,14 @@ const AudioVisualizer = () => {
     const ctx = canvas.getContext("2d");
     let analyser, dataArray, audio;
 
+    // Configuración de los círculos animados
     const circles = [
       { color: "#a127bb", radius: 25, angleOffset: 0, direction: 4 },
       { color: "#ffd939", radius: 30, angleOffset: 0, direction: 2 },
       { color: "#029302", radius: 40, angleOffset: 0, direction: 1 },
     ];
 
+    // 🔹 Ajustar tamaño del canvas dinámicamente
     const resizeCanvas = () => {
       canvas.width = canvas.clientWidth;
       canvas.height = canvas.clientHeight;
@@ -23,18 +25,22 @@ const AudioVisualizer = () => {
     resizeCanvas();
     window.addEventListener("resize", resizeCanvas);
 
+    // 🔹 Permitir desbloquear el contexto de audio (por políticas del navegador)
     const unlockAudioContext = (audioCtx) => {
       if (audioCtx.state !== "suspended") return;
+
       const unlock = () => {
         audioCtx.resume().then(() => {
           window.removeEventListener("click", unlock);
           window.removeEventListener("touchstart", unlock);
         });
       };
+
       window.addEventListener("click", unlock);
       window.addEventListener("touchstart", unlock);
     };
 
+    // 🔹 Inicialización del audio y análisis de frecuencia
     const initAudio = async () => {
       audio = document.getElementById("bg-music");
       if (!audio) {
@@ -42,7 +48,7 @@ const AudioVisualizer = () => {
         return;
       }
 
-      // Intentar reproducir directamente
+      // Intentar reproducir automáticamente
       try {
         await audio.play();
       } catch {
@@ -61,9 +67,11 @@ const AudioVisualizer = () => {
       analyser = audioContext.createAnalyser();
       source.connect(analyser);
       analyser.connect(audioContext.destination);
+
       analyser.fftSize = 256;
       dataArray = new Uint8Array(analyser.frequencyBinCount);
 
+      // 🔹 Renderización visual
       const render = () => {
         requestAnimationFrame(render);
         analyser.getByteFrequencyData(dataArray);
@@ -75,8 +83,7 @@ const AudioVisualizer = () => {
 
         ctx.clearRect(0, 0, w, h);
 
-        const avg =
-          dataArray.reduce((a, b) => a + b, 0) / dataArray.length / 255;
+        const avg = dataArray.reduce((a, b) => a + b, 0) / dataArray.length / 255;
 
         circles.forEach((circle) => {
           const angleStep = (Math.PI * 2) / dataArray.length;
@@ -85,10 +92,7 @@ const AudioVisualizer = () => {
           ctx.beginPath();
           for (let i = 0; i < dataArray.length - skip; i++) {
             const value = dataArray[i] / 255;
-
-            const waveAmplitude =
-              avg < 0.02 ? -circle.radius * 0.9 : value * 50 * avg;
-
+            const waveAmplitude = avg < 0.02 ? -circle.radius * 0.9 : value * 50 * avg;
             const angle = i * angleStep + circle.angleOffset;
             const r = circle.radius + waveAmplitude;
             const x = cx + Math.cos(angle) * r;
@@ -113,6 +117,7 @@ const AudioVisualizer = () => {
 
     initAudio();
 
+    // 🔹 Limpieza al desmontar el componente
     return () => {
       window.removeEventListener("resize", resizeCanvas);
       if (audioCtxRef.current && audioCtxRef.current.state !== "closed") {
