@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-transparent flex justify-center items-center py-4 z-50 pointer-events-auto">
+    <nav className="fixed top-0 left-0 w-full bg-transparent flex justify-center items-center py-1 z-50 pointer-events-auto">
       <div className="flex items-center justify-between w-full max-w-5xl px-8 relative z-50">
         {/* 🔹 Menú móvil (botón) */}
         <button

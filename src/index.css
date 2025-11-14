@@ -4,7 +4,15 @@ html, body, #root {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #111;
   color: white;
   font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-image: url('/images/fondo2.webp');
+  background-color: black;
+  background-size: cover;        /* que llene toda la pantalla */
+  background-repeat: no-repeat;  /* que no se repita */
+  background-attachment: fixed;  /* efecto parallax, siempre cubre */
+  background-position: center;   /* centrada */
 }

@@ -6,7 +6,17 @@ export default function Inicio() {
 
   return (
     <>
-      <h1>página de inicio</h1>
+      <div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+        <div>
+          <div></div>
+        </div>
+      </div>
       
     </>
   );
