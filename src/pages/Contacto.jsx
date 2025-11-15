@@ -10,7 +10,7 @@ export default function Contacto() {
   // -------------------------------
   const SERVICE_ID = "service_24psw4t"; // <-- Pega tu SERVICE ID
   const TEMPLATE_MENSAJE = "template_bqh2sqh"; // <-- Pega plantilla del PRIMER formulario
-  const TEMPLATE_COLAB = "template_f2m85xn"; // <-- Pega plantilla del SEGUNDO formulario
+  const TEMPLATE_COLAB = "template_f2m85xn3"; // <-- Pega plantilla del SEGUNDO formulario
   const PUBLIC_KEY = "ZsLqj8x4qnOplr2Jt"; // <-- Pega tu PUBLIC KEY
   // -------------------------------
 
@@ -33,6 +33,7 @@ export default function Contacto() {
 
   return (
     <div className="min-h-screen w-full flex flex-col items-center justify-center text-white px-6 py-20">
+      
       <div className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-20">
 
         {/* ─────────── FORMULARIO IZQUIERDA ─────────── */}
