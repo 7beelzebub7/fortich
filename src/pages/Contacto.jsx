@@ -53,7 +53,7 @@ export default function Contacto() {
                 name="user_name"
                 placeholder="Nombre"
                 required
-                className="p-3 bg-[#3C0053] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#3C0053] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow-lg shadow-black"
               />
 
               <input
@@ -61,7 +61,7 @@ export default function Contacto() {
                 name="user_email"
                 placeholder="Correo"
                 required
-                className="p-3 bg-[#3C0053] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#3C0053] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow-lg shadow-black"
               />
 
               <textarea
@@ -69,12 +69,12 @@ export default function Contacto() {
                 rows="6"
                 placeholder="Mensaje..."
                 required
-                className="p-3 bg-[#3C0053] text-white rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#3C0053] text-white rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow-lg shadow-black"
               ></textarea>
 
               <button
                 type="submit"
-                className="bg-[#3C0053] hover:bg-[#5c0080] py-2 rounded-lg text-white font-semibold transition"
+                className="bg-[#3C0053] hover:bg-[#5c0080] py-2 rounded-lg text-white font-semibold transition shadow-lg shadow-black"
               >
                 Enviar mensaje
               </button>
@@ -99,7 +99,7 @@ export default function Contacto() {
                 name="user_name"
                 placeholder="Nombre"
                 required
-                className="p-3 bg-[#C39A4A] text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#C39A4A] text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow shadow-xl shadow-black"
               />
 
               <input
@@ -107,7 +107,7 @@ export default function Contacto() {
                 name="user_email"
                 placeholder="Correo"
                 required
-                className="p-3 bg-[#C39A4A] text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#C39A4A] text-black rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow shadow-xl shadow-black"
               />
 
               <textarea
@@ -115,12 +115,12 @@ export default function Contacto() {
                 rows="6"
                 placeholder="Mensaje..."
                 required
-                className="p-3 bg-[#C39A4A] text-black rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#FCC10A]"
+                className="p-3 bg-[#C39A4A] text-black rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-[#FCC10A] shadow shadow-xl shadow-black"
               ></textarea>
 
               <button
                 type="submit"
-                className="bg-[#C39A4A] hover:bg-[#d8b86b] py-2 rounded-lg text-black font-semibold transition"
+                className="bg-[#C39A4A] hover:bg-[#d8b86b] py-2 rounded-lg text-black font-semibold transition shadow shadow-xl shadow-black"
               >
                 Enviar propuesta
               </button>

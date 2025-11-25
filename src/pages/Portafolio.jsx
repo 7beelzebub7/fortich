@@ -1,9 +1,13 @@
 import React from "react";
+import SliderInfinito from "../components/SliderInfinito";
+import SliderInfinitoReverso from "../components/SliderInfinitoReverso";
 
 export default function Portafolio(){
     return(
         <>
-        <h1>pagina de portafolio</h1>
+        <SliderInfinito />
+        <SliderInfinitoReverso/>
+        <SliderInfinito />
         </>
     );
 }

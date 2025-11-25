@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html, body, #root {
   margin: 0;
@@ -15,4 +18,12 @@ body {
   background-repeat: no-repeat;  /* que no se repita */
   background-attachment: fixed;  /* efecto parallax, siempre cubre */
   background-position: center;   /* centrada */
+}
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 18s linear infinite;
+    display: flex;
+    width: max-content;
+  }
 }
