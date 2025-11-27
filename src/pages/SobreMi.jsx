@@ -2,34 +2,55 @@ import React from "react";
 
 export default function SobreMi() {
   return (
-    <div className="relative flex justify-center items-center h-screen bg-transparent">
-      {/* Imagen derecha */}
-      <div className="absolute top-20 right-[3%] w-[550px] h-[750px] rounded-2xl overflow-hidden shadow-lg z-0">
-        <img
-          className="w-full h-full object-cover opacity-90 transition duration-500 hover:opacity-100"
-          src="./images/sm02.jpg"
-          alt="Sobre mí derecha"
-        />
+    <div className="min-h-screen w-full flex items-center justify-center px-6 py-20 text-white relative">
+
+      {/* CONTENEDOR PRINCIPAL */}
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center relative">
+
+        {/* FOTO – EN MÓVIL VA PRIMERO */}
+        <div className="flex justify-center order-1 md:order-2 relative">
+          <img
+            src="./images/sm03.jpg"
+            alt="Foto del cliente"
+            className="
+              w-full 
+              h-[480px] 
+              md:h-[620px]
+              object-cover 
+              object-top
+              rounded-2xl 
+              shadow-xl 
+              z-0
+            "
+          />
+        </div>
+
+        {/* TEXTO – EN PC VA A LA IZQUIERDA */}
+        <div
+          className="
+            flex flex-col gap-4 
+            text-center md:text-left 
+            order-2 md:order-1 
+            relative
+            z-10
+            md:-mt-20
+          "
+        >
+          <h2 className="text-4xl md:text-5xl font-bold text-[#C39A4A] drop-shadow-xl">
+            ¿Quién es 4tich?
+          </h2>
+
+          <p className="text-lg leading-relaxed text-gray-200 drop-shadow-lg">
+            4tich es un artista y creador con una visión única, enfocado en
+            transmitir emociones reales a través de su contenido. Su estilo combina
+            autenticidad, creatividad y una estética moderna que lo diferencia en cada
+            proyecto que realiza. Ya sea en música, fotografía o producción visual,
+            4tich busca conectar con su audiencia de una manera honesta y profunda.
+          </p>
+        </div>
+
       </div>
 
-      {/* Imagen izquierda */}
-      <div className="absolute top-109 left-[3%] w-[550px] h-[750px] rounded-2xl overflow-hidden shadow-lg z-0">
-        <img
-          className="w-full h-full object-cover opacity-90 transition duration-500 hover:opacity-100"
-          src="./images/sm03.jpg"
-          alt="Sobre mí izquierda"
-        />
-      </div>
-
-      {/* Texto central superpuesto */}
-      <div className="relative z-10 text-center max-w-xl px-6 pt-150">
-        <p className="text-white text-2xl font-medium leading-relaxed drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)] backdrop-blur-sm bg-[rgba(0,0,0,0.25)] rounded-2xl p-6">
-          Soy un creador audiovisual apasionado por el poder de la imagen y el
-          sonido. Cada proyecto que realizo busca transmitir intensidad,
-          emoción y autenticidad. Desde el lente hasta la edición, busco siempre
-          capturar algo más que solo una escena: busco capturar una sensación.
-        </p>
-      </div>
     </div>
   );
 }

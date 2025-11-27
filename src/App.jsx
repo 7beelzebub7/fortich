@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Inicio from "./pages/Inicio";
 import SobreMi from "./pages/SobreMi";
-import Portafolio from "./pages/Portafolio";
+import Galeria from "./pages/Galeria";
 import Contacto from "./pages/Contacto";
 import AudioVisualizer from "./components/AudioVisualizer";
 
@@ -20,7 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/sobre-mi" element={<SobreMi />} />
-          <Route path="/portafolio" element={<Portafolio />} />
+          <Route path="/Galeria" element={<Galeria />} />
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>

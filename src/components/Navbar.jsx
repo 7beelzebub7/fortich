@@ -10,7 +10,7 @@ const Navbar = () => {
   const navItems = [
     { name: "Inicio", path: "/" },
     { name: "Sobre mí", path: "/sobre-mi" },
-    { name: "Portafolio", path: "/portafolio" },
+    { name: "Galeria", path: "/Galeria" },
     { name: "Contacto", path: "/contacto" },
   ];
 
@@ -48,9 +48,9 @@ const Navbar = () => {
 
           {/* Logo encima (debe estar primero) */}
           <img
-            src="./fortichLogo2.svg"
+            src="./4tich.png"
             alt="Logo"
-            className="w-20 h-20 relative z-10"
+            className="w-60 h-23 relative z-10"
           />
 
           {/* Visualizador debajo del logo, tomando su tamaño */}

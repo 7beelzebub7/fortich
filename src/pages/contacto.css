@@ -1,0 +1,77 @@
+/* ==================== ESTILOS ORIGINALES ==================== */
+
+.form-animated {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.form-animated input,
+.form-animated textarea {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  outline: none;
+  position: relative;
+  z-index: 2;
+  color: inherit;
+}
+
+.form-animated label {
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  font-size: 15px;
+  opacity: 0.9;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.form-animated input:focus + label,
+.form-animated input:not(:placeholder-shown) + label,
+.form-animated textarea:focus + label,
+.form-animated textarea:not(:placeholder-shown) + label {
+  top: -14px;
+  left: 10px;
+  font-size: 12px;
+  opacity: 1;
+  color: #FCC10A;
+}
+
+/* ==================== AHORA VIENE EL CAMBIO REAL ==================== */
+/* YA NO USARÁS `.bg` ÚNICO PARA TODO */
+/* Cada formulario tendrá su propio color animado */
+
+/* ----- Fondo animado morado (para formulario amarillo) ----- */
+.bg-purple {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #3C0053, #5c0080);
+  z-index: 1;
+  transition: width 0.4s ease;
+  border-radius: 8px;
+}
+
+/* ----- Fondo animado amarillo (para formulario morado) ----- */
+.bg-yellow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #C39A4A, #FFD978);
+  z-index: 1;
+  transition: width 0.4s ease;
+  border-radius: 8px;
+}
+
+/* Animar expansión */
+.form-animated input:focus ~ span,
+.form-animated textarea:focus ~ span {
+  width: 100%;
+}
