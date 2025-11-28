@@ -11,7 +11,7 @@ export default function App() {
   return (
     <>
       {/* Visualizador al fondo, ocupa toda la pantalla */}
-      <AudioVisualizer />
+
 
 
       {/* Navbar y contenido por encima */}
