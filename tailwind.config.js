@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        anton: ['Anton', 'sans-serif'],
+      },
       keyframes: {
         scroll: {
           from: { transform: "translateX(0)" },
