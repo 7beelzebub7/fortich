@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import AudioVisualizer from "../components/AudioVisualizer.jsx";
 import { Highlighter } from "../components/Highlighter";
 import MusicPlayer from "../components/MusicPlayer.jsx";
-import { HyperText } from "../components/HyperText";
+
 
 export default function Inicio() {
   const audioRef = useRef(null);
