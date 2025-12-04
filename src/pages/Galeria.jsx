@@ -19,8 +19,8 @@ export default function Galeria() {
     <div className="w-full flex flex-col gap-6 px-4 py-8 text-white">
 
       {/* █ Fila 1 → 2 IMÁGENES */}
-      <div className="flex gap-4">
-        <div className="flex-1 h-72 rounded-xl overflow-hidden">
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="w-full md:flex-1 h-72 rounded-xl overflow-hidden">
           <Lens zoomFactor={1.8} lensSize={180}>
             <img
               src={images[0]}
@@ -30,7 +30,7 @@ export default function Galeria() {
           </Lens>
         </div>
 
-        <div className="flex-1 h-72 rounded-xl overflow-hidden">
+        <div className="w-full md:flex-1 h-72 rounded-xl overflow-hidden">
           <Lens zoomFactor={1.8} lensSize={180}>
             <img
               src={images[1]}
@@ -42,9 +42,9 @@ export default function Galeria() {
       </div>
 
       {/* █ Fila 2 → 4 IMÁGENES */}
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {images.slice(2, 6).map((src, i) => (
-          <div key={i} className="flex-1 h-[260px] rounded-xl overflow-hidden">
+          <div key={i} className="w-full md:flex-1 h-64 rounded-xl overflow-hidden">
             <Lens zoomFactor={1.8} lensSize={180}>
               <img
                 src={src}
@@ -57,9 +57,9 @@ export default function Galeria() {
       </div>
 
       {/* █ Fila 3 → 3 IMÁGENES */}
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {images.slice(6, 9).map((src, i) => (
-          <div key={i} className="flex-1 h-72 rounded-xl overflow-hidden">
+          <div key={i} className="w-full md:flex-1 h-72 rounded-xl overflow-hidden">
             <Lens zoomFactor={1.8} lensSize={180}>
               <img
                 src={src}
