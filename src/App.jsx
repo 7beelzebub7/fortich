@@ -7,11 +7,12 @@ import Galeria from "./pages/Galeria";
 import Contacto from "./pages/Contacto";
 import AudioVisualizer from "./components/AudioVisualizer";
 
+
+
 export default function App() {
   return (
     <>
-      {/* Visualizador al fondo, ocupa toda la pantalla */}
-
+      
 
 
       {/* Navbar y contenido por encima */}
@@ -24,6 +25,8 @@ export default function App() {
           <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </main>
+
+
     </>
   );
 }

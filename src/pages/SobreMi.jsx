@@ -41,7 +41,7 @@ export default function SobreMi() {
           </h2>
 
           <p className="text-lg leading-relaxed text-gray-200 drop-shadow-lg">
-            4tich es un artista y creador con una visión única, enfocado en
+            Fortich o "4tich" es un artista y creador con una visión única, enfocado en
             transmitir emociones reales a través de su contenido. Su estilo combina
             autenticidad, creatividad y una estética moderna que lo diferencia en cada
             proyecto que realiza. Ya sea en música, fotografía o producción visual,

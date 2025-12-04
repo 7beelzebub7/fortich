@@ -27,3 +27,27 @@ body {
     width: max-content;
   }
 }
+
+@keyframes glowMove {
+  0% {
+    filter: drop-shadow(0 0 0.1px #5c0080)
+            drop-shadow(0 0 1px #5c0080)
+            drop-shadow(0 0 0.1px #5c0080);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 0.1px #FFD700)
+            drop-shadow(0 0 1px #FFD700)
+            drop-shadow(0 0 0.1px #FFD700);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 0.1px #5c0080)
+            drop-shadow(0 0 1px #5c0080)
+            drop-shadow(0 0 0.1px #5c0080);
+  }
+}
+
+.glow-animation {
+  animation: glowMove 3s ease-in-out infinite;
+}
