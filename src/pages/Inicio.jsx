@@ -19,22 +19,22 @@ export default function Inicio() {
 
   const [mensajeActual, setMensajeActual] = useState("");
 
+  // >>>>>>> CAMBIO: abrir en otra pestaña <<<<<<<<
   const handleClick = () => {
-    const random = Math.floor(Math.random() * mensajes.length);
-    setMensajeActual(mensajes[random]);
+    window.open(
+      "https://youtu.be/Nkaj31rKMxk?si=B7OqP0Jmzv9Wd_sF",
+      "_blank"
+    );
   };
 
   const handlePlay = (audioEl) => {
-    // Pausar el otro audio
     if (audioRef1.current && audioRef1.current !== audioEl) audioRef1.current.pause();
     if (audioRef2.current && audioRef2.current !== audioEl) audioRef2.current.pause();
-
-    setCurrentAudio(audioEl); // Esto activa el visualizador
+    setCurrentAudio(audioEl);
   };
 
   return (
     <div>
-      {/* Visualizador flotando al fondo, centrado */}
       {currentAudio && <AudioVisualizer audioEl={currentAudio} />}
 
       <div className="flex flex-col md:flex-row items-center md:items-start">
